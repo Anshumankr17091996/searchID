@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css"><!--content delivery network-->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <title>Search</title>
+    <style>
+            body{
+                background: linear-gradient(to right,green,blue);
+            }
+            .card1{
+                background: cornsilk;
+                width:19%;
+                float: left;
+                margin:5px;
+                height: 70vh;
+            }
+            #template{
+                display:flex;
+                justify-content:center;
+                justify-items: center;
+            }
+           #template h1{
+                font-size: 100PX;
+                color:white;
+                text-align: center;
+                font-weight: bolds;
+            }
+    </style>
+</head>
+<body id="body">
+    <div class="container mt-4">
+        <div id="template"></div>
+    </div>
+    <div class="col-md-4 offset-4 card mt-4">
+        <div class="card-body">
+            <h1 class="display-5">Search Profile 👨</h1>
+            <from action="#" onsubmit="return" >
+                <div class="form-group">
+                    <label for="Emp_ID">Please enter Employe ID</label>
+                    <input type="text" class="form-control" id="Emp_ID" name="Emp_ID" placeholder="Emp_ID"  list="id"/>
+                    <datalist id="id">
+                            <option value="cap101">cap101</option>
+                            <option value="cap102">cap102</option>
+                            <option value="cap103">cap103</option>
+                            <option value="cap104">cap104</option>
+                            <option value="cap105">cap105</option>
+                            
+                        </datalist>
+                </div>
+                <div class="form-group">
+                        <label for="Emp_name">Employe Name</label>
+                            <input type="text" class="form-control" id="Emp_name" name="Emp_name" placeholder="Emp_name" list="name"/>
+                              <datalist id="name">
+                                <option value="AnshumanKr">AnshumanKr</option>
+                                <option value="Shubham@ce">Shubham@ce</option>
+                                <option value="Mayank@makwar">Mayank@makwar</option>
+                                <option value="Shibu">Shibu</option>
+                                <option value="Alok">Alok</option>
+                              </datalist>
+                </div>
+                <div class="form-group">
+                        
+                        <button id="DispP"
+                        onclick="loadprofile()" 
+                        class="btn btn-success btn-block" >Search</button>
+                </div>
+                
+            </from>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="car"></div>
+    
+    <script src="./search.js"></script>
+    <!--external way to call js file-->
+    
+</body>
+</html>
